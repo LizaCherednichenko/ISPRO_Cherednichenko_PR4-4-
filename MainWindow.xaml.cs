@@ -24,5 +24,28 @@ namespace ISPRO_Cherednichenko_PR4_4_
         {
             InitializeComponent();
         }
+
+        string b;
+        string a;
+
+        private void start_Click(object sender, RoutedEventArgs e)
+        {
+            b = TB_N.Text;
+            double rand = new Random();
+            a = rand.Next(0, 10).ToString();
+
+            if (b == rand)
+            {
+                label1.Content ="Победа";
+            }
+            else if (b > rand)
+            {
+                label1.Content = "Меньше";
+            }
+            else
+            {
+                label1.Content = "Больше";
+            }
+        }
     }
 }
