@@ -25,14 +25,14 @@ namespace ISPRO_Cherednichenko_PR4_4_
             InitializeComponent();
         }
 
-
+        int a;
+        int b;
+        int rand;
 
         private void start_Click(object sender, RoutedEventArgs e)
         {
-            int a = Int32.Parse(TB_N.Text);
-            int b = Int32.Parse(TB_R.Text);
-            Random r = new Random();
-            int rand = r.Next(0, b);
+            a = Int32.Parse(TB_N.Text);
+            
 
             if (a == rand)
             {
@@ -42,21 +42,18 @@ namespace ISPRO_Cherednichenko_PR4_4_
             {
                 label1.Content = "Меньше";
             }
-            else if (a < rand)
+            else 
             {
                 label1.Content = "Больше";
             }
-            else
-            {
-                label1.Content = "Ошибка";
-            }
+           
         }
 
-        private void RandOK_Click(object sender, RoutedEventArgs e)
+        private void randOK_Click(object sender, RoutedEventArgs e)
         {
-            int b = Int32.Parse(TB_R.Text);
+            b = Int32.Parse(TB_R.Text);
             Random r = new Random();
-            int rand = r.Next(0, b);
+            rand = r.Next(0, b);
         }
     }
 }

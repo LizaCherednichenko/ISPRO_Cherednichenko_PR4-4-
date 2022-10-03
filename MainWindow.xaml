@@ -7,11 +7,13 @@
         mc:Ignorable="d"
         Title="Угадай число" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="TB_N" HorizontalAlignment="Left" Height="23" Margin="60,45,0,0" TextWrapping="Wrap" Text="Введите число" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="start" Content="Начать" HorizontalAlignment="Left" Margin="267,68,0,0" VerticalAlignment="Top" Width="75" Click="start_Click"/>
-        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="245,211,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TB_R" HorizontalAlignment="Left" Height="23" Margin="60,10,0,0" TextWrapping="Wrap" Text="Введите рандом" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="RandOK" Content="Начать" HorizontalAlignment="Left" Margin="208,13,0,0" VerticalAlignment="Top" Width="75" Click="RandOK_Click"/>
+        <TextBox x:Name="TB_N" HorizontalAlignment="Left" Height="23" Margin="209,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="start" Content="Начать" HorizontalAlignment="Left" Margin="232,103,0,0" VerticalAlignment="Top" Width="75" Click="start_Click"/>
+        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="232,167,0,0" VerticalAlignment="Top" Width="75" Background="#FFFFD0D0"/>
+        <TextBox x:Name="TB_R" HorizontalAlignment="Left" Height="23" Margin="209,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Введите конечное значение" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="введите ответ" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="randOK" Content="ок" HorizontalAlignment="Left" Margin="373,17,0,0" VerticalAlignment="Top" Width="75" Click="randOK_Click"/>
 
     </Grid>
 </Window>
